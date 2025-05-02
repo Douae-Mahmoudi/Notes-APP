@@ -1,0 +1,74 @@
+.container img {
+    width: 27px;
+    height: 27px;
+}
+
+.container {
+    text-align: center;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.container button {
+    background-color: rgb(223, 222, 163);
+    margin: 30px 20px;
+    cursor: pointer;
+}
+
+.input-box {
+    width: 100%; /* Assurer que la largeur ne dépasse pas celle du conteneur */
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    position: relative;
+    box-sizing: border-box; /* Inclure les bordures dans le calcul de la largeur et hauteur */
+}
+
+.input-box img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px; /* L'icône de suppression reste dans le cadre */
+    cursor: pointer;
+}
+
+.note-title {
+    width: 100%; /* La largeur du titre s'ajuste à celle du rectangle */
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center; /* Centrer le titre dans le champ */
+    box-sizing: border-box; /* Inclure la bordure dans la largeur totale */
+}
+
+.note-container {
+    display: inline-block;
+    margin: 15px;
+    width: 320px; /* Largeur du rectangle */
+    height: 200px; /* Hauteur du rectangle */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box; /* Inclure la bordure dans le calcul de la largeur et hauteur */
+    overflow: hidden; /* Empêcher le contenu de déborder */
+}
+
+.note-container input, .note-container p {
+    width: 100%; /* Prendre 100% de la largeur du conteneur */
+    box-sizing: border-box; /* Assurer que la bordure et le padding sont inclus dans la largeur */
+}
